@@ -1,0 +1,36 @@
+
+<html>  
+    <head> Javascript Events </head>  
+    <body>  
+    <script language="Javascript" type="text/Javascript">  
+        
+        function clickevent()  
+        {  
+            document.write("This is Javascript click evet");  
+        }  
+
+        function onmousevent() {
+            alert("This is onmouseover event");
+        }
+
+        function onfocusEvent() {
+            document.getElementById("input1").style.background="aqua";
+            
+        }
+        
+        function keydownevent()  
+        {  
+        document.getElementById("input1");  
+        alert("Pressed a key");  
+        }  
+
+    </script>  
+    <form>  
+    <input type="button" onclick="clickevent()" value="Who's this?"/>  
+    </form>  
+    <p onmouseover="onmousevent()">keep the cursor over me</p><br>
+    <h2>Enter something here</h2>
+    <input type="text" id="input1" onfocus="onfocusEvent()"><br><br>
+    <input type="text" id="input2" onkeydown="keydownevent()"><br>
+    </body>  
+    </html>  
